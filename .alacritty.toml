@@ -1,0 +1,107 @@
+# ─────────────────────────────────────────────
+#  Alacritty Configuration — NTH//07
+#  Theme: U.E.S.C. Marathon Terminal
+# ─────────────────────────────────────────────
+
+[window]
+opacity = 0.92
+padding = { x = 10, y = 10 }
+decorations = "full"
+title = "MARATHON TERMINAL"
+dynamic_title = true
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold   = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+size   = 13.0
+
+[font.offset]
+x = 0
+y = 1
+
+# ─────────────────────────────────────────────
+#  Colors — U.E.S.C. Marathon phosphor green
+#  Inspired by the Bungie Marathon terminal aesthetic
+# ─────────────────────────────────────────────
+
+[colors.primary]
+background = "#0a0f0a"   # deep terminal black, slight green tint
+foreground = "#39ff5a"   # phosphor green
+
+[colors.cursor]
+text   = "#0a0f0a"
+cursor = "#39ff5a"
+
+[colors.vi_mode_cursor]
+text   = "#0a0f0a"
+cursor = "#b0ffb8"
+
+[colors.search.matches]
+foreground = "#0a0f0a"
+background = "#39ff5a"
+
+[colors.search.focused_match]
+foreground = "#0a0f0a"
+background = "#b0ffb8"
+
+[colors.normal]
+black   = "#0a0f0a"
+red     = "#ff4444"      # error / alert — keeps the monochrome feel broken only for severity
+green   = "#39ff5a"
+yellow  = "#b8ff70"      # amber-green for warnings
+blue    = "#1aff8c"
+magenta = "#00e56e"
+cyan    = "#00ffaa"
+white   = "#a8ffa8"
+
+[colors.bright]
+black   = "#1a2e1a"
+red     = "#ff6666"
+green   = "#70ff88"
+yellow  = "#ccff88"
+blue    = "#44ffaa"
+magenta = "#33ff88"
+cyan    = "#33ffcc"
+white   = "#d4ffd4"
+
+# ─────────────────────────────────────────────
+#  Cursor
+# ─────────────────────────────────────────────
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 600     # ms — slow phosphor pulse
+unfocused_hollow = true
+
+# ─────────────────────────────────────────────
+#  Scrolling
+# ─────────────────────────────────────────────
+
+[scrolling]
+history    = 10000
+multiplier = 3
+
+# ─────────────────────────────────────────────
+#  Bell — silent (no terminal bell)
+# ─────────────────────────────────────────────
+
+[bell]
+animation = "EaseOutExpo"
+duration  = 0
+color     = "#39ff5a"
+
+# ─────────────────────────────────────────────
+#  Selection
+# ─────────────────────────────────────────────
+
+[selection]
+save_to_clipboard = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+# ─────────────────────────────────────────────
+#  Mouse
+# ─────────────────────────────────────────────
+
+[mouse]
+hide_when_typing = true
