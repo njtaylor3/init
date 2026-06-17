@@ -2,7 +2,7 @@
 apt -y update
 apt -y upgrade
 
-apt -y install alacritty zsh gcc git curl
+apt -y install alacritty zsh gcc git curl tmux
 snap install nvim --classic
 
 curl https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
