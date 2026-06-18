@@ -20,6 +20,8 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/downl
 tar xf lazygit.tar.gz lazygit
 install lazygit -D -t /usr/local/bin/
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 curl https://go.dev/dl/go1.26.1.linux-amd64.tar.gz
 rm -rf /usr/local/go
 tar -C /usr/local -xzf go1.26.1.linux-amd64.tar.gz
