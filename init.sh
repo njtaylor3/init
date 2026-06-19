@@ -20,6 +20,9 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/downl
 tar xf lazygit.tar.gz lazygit
 install lazygit -D -t /usr/local/bin/
 
+mkdir ~/.config/nvim/colors
+mv marathoncolors.lua ~/.config/nvim/colors/marathoncolors.lua
+mv marathon.lua ~/.config/nvim/lua/plugins/marathon.lua
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl https://go.dev/dl/go1.26.1.linux-amd64.tar.gz
